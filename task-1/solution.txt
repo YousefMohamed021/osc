@@ -1,0 +1,22 @@
+mkdir Yousef
+osc@osc:~$ cd Yousef
+osc@osc:~/Yousef$ touch one.txt two.txt three.txt four.txt
+osc@osc:~/Yousef$ mkdir BAD
+osc@osc:~/Yousef$ cd BAD
+osc@osc:~/Yousef/BAD$ touch bad.txt
+osc@osc:~/Yousef/BAD$ cd -
+osc@osc:~/Yousef$ mv one.txt /home/osc/Downloads
+osc@osc:~/Yousef$ cd ..
+osc@osc:~$ cd Downloads
+osc@osc:~/Downloads$ cp one.txt copy.txt
+osc@osc:~/Downloads$ cd ..
+osc@osc:~$ cd Yousef
+osc@osc:~/Yousef$ nano two.txt
+osc@osc:~/Yousef$ cat two.txt
+Yousef
+osc@osc:~/Yousef$ nano three.txt
+osc@osc:~/Yousef$ cat three.txt
+1-hello OSC 2-hello OSC 3-hello OSC 4-hello OSC 5-hello OSC 6-hello OSC 7-hello OSC 8-hello OSC
+osc@osc:~/Yousef$ mv three.txt hello.txt
+osc@osc:~/Yousef$ rm four.txt
+osc@osc:~/Yousef$ rm -r BAD
