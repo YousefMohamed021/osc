@@ -20,3 +20,6 @@ osc@osc:~/osc/task-2$ git commit -m "Added I love Git"
 osc@osc:~/osc/task-2$ git checkout main	
 osc@osc:~/osc/task-2$ git merge intro
 osc@osc:~/osc/task-2$ git tag v1
+osc@osc:~/osc/task-2$ git add solution.txt
+osc@osc:~/osc/task-2$ git commit -m "Added Solution"
+osc@osc:~/osc/task-2$ git push origin main
