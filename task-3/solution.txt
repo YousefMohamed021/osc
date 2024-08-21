@@ -1,0 +1,41 @@
+mkdir project_files
+cd project_files
+mkdir reports data logs
+cd reports
+touch report1.md report2.md
+cd logs
+touch system.log error.log file1.pdf file2.pdf
+cd data
+touch data.csv info.txt
+nano data.csv 
+nano system.log 
+nano report1.md 
+tar -cf logs_backup.tar *.pdf *.log
+mv logs_backup.tar ~/project_files/
+tar -xf logs_backup.tar -C logs
+find ~ -name "*.md"
+find . -name "*.log"
+find . -name "file1.pdf"
+find . -iname "*.pdf"
+find ~/project_files/logs -type f
+ln -s /data/data.csv link_data.csv
+nano link_data.csv 
+cat ~/project_files/data/data.csv 
+data
+Modified
+unlink link_data.csv
+echo "Summary Start" > ~/project_files/summary.txt
+date >> summary.txt 
+wc -l < summary.txt | tee -a summary.txt
+wc -w ~/project_files/reports/report1.md
+wc -c ~/project_files/logs/system.log | tee -a summary.txt 
+find ~/project_files | wc -l | tee -a summary.txt 
+cat summary.txt 
+Summary Start
+Wed Aug 21 06:54:54 PM EEST 2024
+2
+7 /home/osc/project_files/logs/system.log
+14
+git add solution.txt
+git commit -m "Added Solution"
+git push origin main
