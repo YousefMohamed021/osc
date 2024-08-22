@@ -28,7 +28,7 @@ echo "Summary Start" > ~/project_files/summary.txt
 date >> summary.txt 
 wc -l < summary.txt | tee -a summary.txt
 wc -w ~/project_files/reports/report1.md
-wc -c ~/project_files/logs/system.log | tee -a summary.txt 
+wc -c ~/project_files/logs/system.log >> summary.txt 
 find ~/project_files | wc -l | tee -a summary.txt 
 cat summary.txt 
 Summary Start
