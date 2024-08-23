@@ -1,0 +1,20 @@
+sudo useradd newuser
+sudo groupadd newgroup
+sudo usermod -a -G newgroup newuser 
+groups newuser 
+mkdir ~/task_dir
+cd ~/task_dir
+touch sample.txt
+chmod 640 sample.txt 
+sudo chown newuser sample.txt 
+sudo chgrp newgroup sample.txt 
+sudo groupdel newgroup
+sudo userdel -r newuser
+sudo apt update
+sudo apt install lolcat
+echo "I love OSC" | lolcat
+sudo apt remove lolcat
+git add soltuion.txt
+git commit -m "added solution"
+git push origin main
+  
